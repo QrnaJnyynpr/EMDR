@@ -1,0 +1,47 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="icon.png"/>
+	<title>Custom EMDR | Play</title>
+</head>
+
+<body>
+
+	<div id="navbar">
+	   	<button id="nightmode" onclick="nightmode()">&#128161</button>
+		<button id="start" onclick="submit()">Start</button>
+		<button id="stop" onclick="remove()">Stop</button>
+
+		<select id="speed" onchange="changes()" autocomplete='off'>
+   			<option value="" disabled selected>Speed</option>
+			<option value="veryslow">Very slow</option>
+			<option value="default">Slow (default)</option>
+			<option value="medium">Medium</option>
+ 			<option value="fast">Fast</option>
+		</select>
+
+		<select id="colour" onchange="changes()" autocomplete='off'>
+   			<option value="" disabled selected>Ball colour</option>
+			<option value="red">Red</option>
+			<option value="orange">Orange</option>
+			<option value="yellow">Yellow</option>
+			<option value="green">Green</option>
+			<option value="blue">Blue</option>
+			<option value="indigo">Indigo</option>
+			<option value="violet">Violet</option>
+		</select>
+	</div>
+
+	<div id="container">
+		<div id="circle" class="green"></div>
+	</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
